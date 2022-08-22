@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background: black;
+    text-align: center;
+}
+.complite{
+    position: relative;
+    top:20px
+}
+h2{
+    position: relative;
+    top: 30px;
+}
+.set{
+    position: relative;
+    top: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.numbers{
+    position: relative;
+    top: 200px;
+    display: none;
+    flex-direction: column;
+}
+#row{
+    display: flex;
+    flex-direction: row;
+}
+#row div{
+    cursor: pointer;
+    background:gray;
+    text-align: center;
+    padding-top: 5px;
+    margin: 10px;
+    width: 70px;
+    height: 30px;
+    transition: 0.4s;
+}
+#row div:hover{
+    background: #089645;
+}
+.bgstart{
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+}
+.bgstart button{
+    border: 2px solid #089645;
+    background: #089645;
+    border-radius: 7px;
+    width: 100px;
+    height: 30px;
+    color:white;
+    font-size: 20px;
+    position: relative;
+    top:40vh;
+    transition: 0.7s;
+}
+.bgstart button:hover{
+    background: #07813c;
+}
+.rows{
+    display: none;
+    position: relative;
+    top: 200px;
+    display: none;
+    flex-direction: row;
+}
+.rows div{
+    cursor: pointer;
+    background:gray;
+    text-align: center;
+    padding-top: 5px;
+    margin: 10px;
+    width: 70px;
+    height: 30px;
+    transition: 0.4s;
+}
+.rows div:hover{
+    background: #089645;
+}
+h1{
+    position: relative;
+    top: 200px;
+    display:none;
+    font-size: 48px;
+    font-weight: 700;
+}
