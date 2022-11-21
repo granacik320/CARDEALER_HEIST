@@ -1,7 +1,7 @@
 var result = "";
 var numbers = [];
 var complite = 1;
-var char = "1234567890";
+var char = "1234567890"; //"ΘΙΛΨΧΦξΞλΠζβΣθ";//φχψηεδγαΩοπρςστυωμκνι
 var st = [];
 
 document.querySelector(".numbers").addEventListener("click", check);
@@ -12,6 +12,7 @@ function random(min, max) {
 }
 
 function hide(){
+    document.getElementById("btn").disabled = true;
     complite = 1;
     numbers = [];
     document.querySelector(".complite").innerHTML = "1/3"
@@ -75,6 +76,7 @@ function check(e){
         }else{
             document.querySelector(".bgstart").style.display = "flex";
             document.querySelector(".numbers").style.display = "none";
+            document.getElementById("btn").disabled = false;
         }
     }
 }
@@ -95,6 +97,7 @@ function check2(e){
         }else{
             document.querySelector(".bgstart").style.display = "flex";
             document.querySelector(".rows").style.display = "none";
+            document.getElementById("btn").disabled = false;
         }
     }
 }
@@ -102,11 +105,11 @@ function end(){
     document.querySelector(".bgstart").style.display = "flex";
     document.querySelector(".rows").style.display = "none"
     document.querySelector(".numbers").style.display = "none";
+    document.getElementById("btn").disabled = false;
 }
 function time(){
     if(st[st.length - 1] == false){
         end()
     }
     st.pop();
-
 }
