@@ -31,11 +31,11 @@ h2{
     display: none;
     flex-direction: column;
 }
-#row{
+.row{
     display: flex;
     flex-direction: row;
 }
-#row div{
+.row div{
     cursor: pointer;
     background:gray;
     text-align: center;
@@ -45,7 +45,7 @@ h2{
     height: 30px;
     transition: 0.4s;
 }
-#row div:hover{
+.row div:hover{
     background: #089645;
 }
 .bgstart{
@@ -100,10 +100,17 @@ h1{
 }
 h3{
     position: absolute;
-    bottom: 10px;
+    bottom: 24px;
     color: white;
 }
 a{
     color:#5d02cc;
     text-decoration: none;
+}
+#progress{
+    width: 100vw;
+    height: 8px;
+    position: fixed;
+    bottom: 10px;
+    z-index: 2;
 }
