@@ -1,7 +1,7 @@
 var result = "";
 var numbers = [];
 var complite = 1;
-var char = "1234567890"; //"ΘΙΛΨΧΦξΞλΠζβΣθ";//φχψηεδγαΩοπρςστυωμκνι
+var char = "ΘΙΛΨΧΦξΞλΠζβΣθ";//φχψηεδγαΩοπρςστυωμκνι
 var st = [];
 
 document.querySelector(".numbers").addEventListener("click", check);
@@ -22,7 +22,7 @@ function hide(){
 
 function setnumbers36(){
     st.unshift(false);
-    setTimeout(time, 10000);
+    setTimeout(time, 7000);
     document.querySelector(".bgstart").style.display = "none";
     document.querySelector(".numbers").style.display = "flex";
     document.querySelector(".app").style.display = "block";
@@ -31,14 +31,14 @@ function setnumbers36(){
         for(let j = 1; j < 7; j++){
             result = "";
             for ( var x = 0; x < 4; x++ ) {
-                result += char.charAt(Math.floor(Math.random() * 10));
+                result += char.charAt(Math.floor(Math.random() * 14));
             }
             document.querySelector(".row"+i+" "+".number"+j).innerHTML = result;
         }
     }
     result = "";
     for ( var x = 0; x < 4; x++ ) {
-        result += char.charAt(Math.floor(Math.random() * 10));
+        result += char.charAt(Math.floor(Math.random() * 14));
     }
     document.querySelector(".set").innerHTML = result;
     document.querySelector(".row"+ random(1,6) +" "+".number"+ random(1,6)).innerHTML = result;
@@ -46,11 +46,11 @@ function setnumbers36(){
 }
 function setnumbers6(){
     st.unshift(false);
-    setTimeout(time, 10000);
+    setTimeout(time, 7000);
     for(let j = 1; j < 7; j++){
         result = "";
         for ( var x = 0; x < 4; x++ ) {
-            result += char.charAt(Math.floor(Math.random() * 10));
+            result += char.charAt(Math.floor(Math.random() * 14));
         }
         document.querySelector(".rows"+" .number"+j).innerHTML = result;
     }
